@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+    
+*{
+    border: 0px dotted #ff0000;
+    margin: 0;
+    padding: 0;
+    transition-duration: .3s;
+    
+    text-decoration: none;
+}
+
+.main{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: #F0F8FF;
+}
+
+.header{
+    width: 50%;
+    height: calc(10vh - .25vh);
+    margin: auto;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+.accordion{
+    width: 50%;
+    height: 90vh;
+    margin: 0 auto;
+    color: #20B2AA;
+}
+
+.accordion:hover{
+    color: #228B22;
+}
+
+.bayan_block{
+    width: 100%;
+    height: auto;
+}
+
+.accordion label{
+    display: inline-block;
+    width: 100%;
+    line-height: 9vh;
+
+    cursor: pointer;
+    border-top: .25vh solid #FAEBD7;
+    
+}
+
+.accordion label:hover{
+}
+
+.accordion article{
+    text-align: center;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+/*start task*/
+
+.img{
+    width: 35vh;
+    height: 35vh;
+    margin-bottom: 5vh;
+}
+
+.accordion input{
+    display: none;
+    overflow: hidden;
+}
+
+.accordion input:checked ~ article{
+    width: auto;
+    height: 40vh;
+}
