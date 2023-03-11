@@ -50,10 +50,11 @@ html {
     display: inline-block;
     width: 100%;
     line-height: 9vh;
-
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: .25vh solid #FAEBD7;
-    
 }
 
 .accordion label:hover{
@@ -65,8 +66,6 @@ html {
     height: 0px;
     overflow: hidden;
 }
-
-/*start task*/
 
 .img{
     width: 35vh;
@@ -82,4 +81,24 @@ html {
 .accordion input:checked ~ article{
     width: auto;
     height: 40vh;
+    background-color: #228B22;
+}
+
+.acord__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: .25vh solid #FAEBD7;
+}
+
+.accordion legend{
+    margin-right: 1vw;
+    margin-left: auto;
+    width: auto;
+    /*-moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);*/
+}
+
+.accordion input:checked ~ label legend{
+    -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
 }
