@@ -27,7 +27,8 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;
-    line-height: 6rem;
+    line-height: 10vh;
+    color: #228B22;
 }
 
 .accordion{
@@ -81,7 +82,6 @@ html {
 .accordion input:checked ~ article{
     width: auto;
     height: 40vh;
-    background-color: #228B22;
 }
 
 .acord__container{
@@ -96,9 +96,22 @@ html {
     margin-right: 1vw;
     margin-left: auto;
     width: auto;
-    /*-moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);*/
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 0rem;
 }
 
 .accordion input:checked ~ label legend{
-    -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.accord_text{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 9vh;
 }
