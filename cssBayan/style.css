@@ -15,7 +15,7 @@ html {
     width: 100vw;
     height: auto;
     min-height: 100vh;
-    background-color: #F0F8FF;
+    background-color: #FAEBD7;
 }
 
 .header{
@@ -28,18 +28,18 @@ html {
     font-weight: 700;
     font-size: 3rem;
     line-height: 10vh;
-    color: #228B22;
+    color: #CD853F;
 }
 
 .accordion{
     width: 50%;
     height: 90vh;
     margin: 0 auto;
-    color: #20B2AA;
+    color: #778899;
 }
 
 .accordion:hover{
-    color: #228B22;
+    color: #696969;
 }
 
 .bayan_block{
@@ -100,7 +100,7 @@ html {
     font-family: 'Inika';
     font-style: normal;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 0rem;
 }
 
