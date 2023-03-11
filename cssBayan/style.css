@@ -44,6 +44,10 @@ html {
     color: #696969;
 }
 
+.accordion:hover .open-close{
+    color: #696969;
+}
+
 .bayan_block{
     width: 100%;
     height: auto;
@@ -104,6 +108,7 @@ html {
     font-weight: 700;
     font-size: 2rem;
     line-height: 0rem;
+    color: #FAEBD7;
 }
 
 .accordion input:checked ~ label legend{
