@@ -1,1 +1,1 @@
-1. https://GoodValts.github.io/cssBayan/cssBayan
+https://GoodValts.github.io/cssBayan/cssBayan
