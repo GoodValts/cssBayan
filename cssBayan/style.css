@@ -150,7 +150,12 @@ html {
         display: none;
         overflow: hidden;
     }
-       
+    
+    .accordion input:hover:disabled ~ article{
+        width: 0vw;
+        height: 0vw;
+    }
+
     .accordion input:checked ~ article{
         height: 40vh;
     }
@@ -172,11 +177,6 @@ html {
 
     .accordion article{
         cursor: default;
-    }
-
-    .accordion input:hover ~ article{
-        width: 0vw;
-        height: 0vw;
     }
 
     .img{
