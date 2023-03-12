@@ -56,28 +56,30 @@ html {
 .accordion label{
     display: inline-block;
     width: 100%;
-    line-height: 9vh;
+    line-height: 5.5vh;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: .25vh solid #FAEBD7;
+    border-top: .2vh solid #778899;
 }
 
 .accordion label:hover{
+    border-top: .2vh solid #696969;
 }
 
 .accordion article{
     text-align: center;
-    width: 0px;
-    height: 0px;
+    width: 0vw;
+    height: 0vw;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .img{
-    width: 35vh;
-    height: 35vh;
-    margin-bottom: 5vh;
+    width: 28vh;
+    height: 28vh;
+    margin-bottom: 1vh;
 }
 
 .accordion input{
@@ -87,7 +89,13 @@ html {
 
 .accordion input:checked ~ article{
     width: auto;
-    height: 40vh;
+    height: 30vh;
+}
+
+.accordion input:hover ~ article{
+    width: auto;
+    height: 30vh;
+    transition: .5s;
 }
 
 .acord__container{
@@ -120,10 +128,10 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 9vh;
+    line-height: 5.5vh;
 }
 
-@media (max-width: 1365git px) {
+@media (max-width: 1365px) {
     .header{
         width: 80%;
         font-size: 2.5rem;
@@ -138,6 +146,15 @@ html {
         color: #696969;
     }
 
+    .accordion input{
+        display: none;
+        overflow: hidden;
+    }
+       
+    .accordion input:checked ~ article{
+        height: 40vh;
+    }
+
     .accordion legend{
         font-size: 1.75rem;
         color: #696969;
@@ -145,6 +162,31 @@ html {
 
     .accord_text{
         font-size: 1.25rem;
+        line-height: 9vh;
+    }
+
+    .accordion label{
+        cursor: default;
+        line-height: 9vh;
+    }
+
+    .accordion article{
+        cursor: default;
+    }
+
+    .accordion input:hover ~ article{
+        width: 0vw;
+        height: 0vw;
+    }
+
+    .img{
+        width: 35vh;
+        height: 35vh;
+        margin-bottom: 5vh;
+    }
+
+    .accord_container{
+        cursor: default;
     }
 }
 
@@ -152,6 +194,7 @@ html {
     .header{
         width: 90%;
         font-size: 1.5rem;
+        overflow: hidden;
     }
     
     .accordion{
@@ -170,5 +213,25 @@ html {
 
     .accord_text{
         font-size: 1rem;
+    }
+
+    .accordion label{
+        cursor: default;
+    }
+
+    .accordion article{
+        cursor: default;
+    }
+    
+    .img{
+        object-fit: cover;
+        max-width: 35vh;
+        max-height: 35vh;
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .accord_container{
+        cursor: default;
     }
 }
