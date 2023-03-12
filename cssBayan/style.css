@@ -122,3 +122,53 @@ html {
     font-size: 1.5rem;
     line-height: 9vh;
 }
+
+@media (max-width: 1919px) {
+    .header{
+        width: 80%;
+        font-size: 2.5rem;
+    }
+
+    .accordion{
+        width: 80%;
+        color: #696969;
+    }
+
+    .accordion:hover{
+        color: #696969;
+    }
+
+    .accordion legend{
+        font-size: 1.75rem;
+        color: #696969;
+    }
+
+    .accord_text{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 819px) {
+    .header{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    
+    .accordion{
+        width: 90%;
+        color: #696969;
+    }
+
+    .accordion:hover{
+        color: #696969;
+    }
+
+    .accordion legend{
+        font-size: 1.25rem;
+        color: #696969;
+    }
+
+    .accord_text{
+        font-size: 1rem;
+    }
+}
